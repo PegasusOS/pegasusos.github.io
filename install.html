@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="An AOSP Based Custom ROM">
+
+<title>PegasusOS</title>
+
+<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="libs/animate/animate.css">
+<link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.js">
+<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+
+<!--Chrome Firefox Opera-->
+<meta name="theme-color" content="#000000">
+<!--Windows Phones-->
+<meta name="msapplication-navbutton-color" content="#000000">
+<!--Safari/ios-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<style>
+        h2 {
+            color: #3EB498;
+        }
+
+        h5 {
+            color: yellow;
+        }
+
+        p {
+            color: white;
+            /*font-family: 'Nunito', sans-serif;*/
+            font-family: 'Montserrat', sans-serif;
+        }
+</style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-floating" style="background-color: black;">
+        <div class="container">
+            <a class="navbar-brand">
+			<img src="assets/img/favicon.png" alt="" width="40">
+                PegasusOS
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-lg-5 mt-3 mt-lg-0">
+
+                    <li class="nav-item ">
+                        <a class="nav-link" style="color: white;" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" style="color: white;" href="index.html#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="index.html#support">Support</a>
+                    </li>
+                </ul>
+				        <div class="ml-auto my-2 my-lg-0">
+          <a href="downloads.html">
+            <button class="btn custom-button-green">Download Now</button></a>
+        </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-section wow" id="abtus">
+        <div class="container">
+            <h2 class="text-center wow animate__animated animate_fadeIn">Installation instructions</h2>
+            <hr>
+        </div>
+
+
+        <div class=" wow animate__animated animate__fadeInUp align-items-center ">
+            <div class="container">
+                <div class="row">
+
+                    <!-- normal -->
+                    <div class="col-lg-6  wow animate__animated animate__fadeInUp">
+                        <div class="row my-row">
+                            <h2 style="color: greenyellow;">Installation: For normal builds</h2>
+                        </div>
+                        <div class="row my-row">
+                            <div class="col-md-8 col-sm-6 my-col">
+                                <div class="row my-row justify-content-center">
+                                    <div class="col-md-12 col-sm-6 my-col">
+                                        <ol><li><h6>Make sure platform tools is installed (adb and fastboot).
+                                        <li><h6>Download ROM ota zip & boot image file from above link.
+                                        <li><h6>Boot your device into bootloader.
+                                        <li><h6>On your PC, use command - ' fastboot flash boot boot.img '
+										<li><h6>Boot into recovery
+										<li><h6>Click Apply Update - Apply from ADB (option available in recovery)
+										<li><h6>Open cmd or terminal in your pc and enter this command - ' adb sideload rom.zip '
+										<li><h6>Reboot
+										</ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- normal -->
+                    <div class="col-lg-6  wow animate__animated animate__fadeInUp">
+                        <div class="row my-row">
+                            <h2 style="color: greenyellow;">Installation: For factory image builds (You can lock bootloader)</h2>
+                        </div>
+                        <div class="row my-row">
+                            <div class="col-md-8 col-sm-6 my-col">
+                                <div class="row my-row justify-content-center">
+                                    <div class="col-md-12 col-sm-6 my-col">
+                                        <ol><li><h6>Make sure platform tools is installed (adb and fastboot).
+                                        <li><h6>Download factory image zip from above link.
+                                        <li><h6>Extract the zip with archive tools.
+                                        <li><h6>Connect pixel in boot-loader to PC (volume up + down combo)
+										<li><h6>Run the flash-all* file to start flashing (.sh for linux and .bat for windows)
+										<li><h6>Reboot</ol>
+										<ul>
+										<li><h6>Optional : Enter this to lock bootloader (fastboot oem lock)
+										</ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+				</div>
+            </div>
+        </div>
+
+        <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+
+        <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+
+        <script src="libs/particles/particles.js"></script>
+        <script src="libs/particles/app.js"></script>
+
+
+        <script src="libs/wow/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>
